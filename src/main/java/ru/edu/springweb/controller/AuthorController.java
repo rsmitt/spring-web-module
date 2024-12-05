@@ -1,4 +1,4 @@
-package ru.edu.springweb;
+package ru.edu.springweb.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
