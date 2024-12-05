@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hobby's Page</title>
+</head>
+<body>
+<h3>Список хобби</h3>
+<table>
+    <thead>
+    <tr>
+        <th>Хобби</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="hobby : ${hobbys}">
+        <td th:text="${hobby}"></td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:href="@{author}">Вернуться на главную</a>
+</div>
+</body>
+</html>
